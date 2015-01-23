@@ -1,7 +1,7 @@
 // header start
 var bio = {
 	"info" : {
-		"name" : "Blake Wang",
+		"name" : "Blake Wangster",
 		"role" : "World Dictator",
 		"pic" : "images/resume_pic_2.jpg"
 	}
