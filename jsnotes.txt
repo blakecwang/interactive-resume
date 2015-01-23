@@ -1,0 +1,92 @@
+console.log("text");              prints text to the console - very similiar to 
+                                  System.out.print(); in Java. Useful for debugging
+
+$("stuff")                        sytax used for jQuery
+#                                 goes in front of id
+
+to declare variables, use form
+
+	var variableName = value;
+
+objects are in curly braces {}
+arrays are in square braces []
+
+TEHRE ARE NO CLASSES IN JAVASCRIPT!!!
+
+FUNCTIONS ARE OBJECTS!!!
+
+declare an object:
+
+	var bioObject = {
+		"name" : "blake",
+		"age" : "24"
+	}						// object literal notation
+
+JSON -> Javascript Object Notation
+
+DOT VS. BRACKET NOTATION (for accessing properties of variables)
+	- bracket notation always works
+	- dot notation requires that the first character is a letter
+		and there be no special characters
+
+for (in) loops take the form:
+
+	for(itemName in arrayOrObjectName) {
+		doSomething();
+	};
+
+- item can be named anything you want
+- array can also be an object
+
+FUNCTIONS
+
+- functions can have two different syntaxes
+
+	var functionName = function(param1, param2) {
+		// code goes here
+	}
+
+	or
+
+	function functionName(param1, param2) {
+		// code goes here
+	}
+
+
+to host jQuery, use jQuery official or Google
+
+string passed into jQuery is called "selector"
+
+	$(string)
+
+you can use jQuery to select a collection of elements using a 
+
+	tag name:		$('tag')
+	class name:		$('.class')
+	id:				$('#id')
+
+jQuery DOM traversal methods:
+	.parent()		<- will traverse UP one level
+	.parents()		<- will traverse UP to the top
+	.children()		<- will traverse DOWN one level
+	.find()			<- will traverse DOWN to the bottom
+		- universal selector (find all) is .find('*')
+	.siblings()
+
+.append() adds new element as LAST CHILD of whatever it's operating on
+.prepend() adds new element as FIRST CHILD of whatever it's operating on
+.insertBefore() adds new element as SIBLING BEFORE whatever it's operating on
+.insertAfter() adds new element as SIBLING AFTER whatever it's operating on
+
+Pass your function into the jQuery object, like so:
+
+	function someFunction() {
+	    // Do interesting things
+	}
+	$(someFunction)
+	
+	or
+
+	$(function(){
+	    // Do interesting things
+	})
